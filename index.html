@@ -1,17 +1,41 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Yasin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register/Login Form</title>
 </head>
 <body>
-    <h1>
-        tes
-    </h1>
-    <p>
-        <a href="responsive-navbar-1/index.html"></a>
-    </p>
+  <h1>Register/Login Form</h1>
+
+  <!-- Register Form -->
+  <h2>Register</h2>
+  <form id="registerForm">
+    <label for="registerName">Nama:</label>
+    <input type="text" id="registerName" name="registerName" data-cy="registerName" required><br>
+
+    <label for="registerEmail">Email:</label>
+    <input type="email" id="registerEmail" name="registerEmail" data-cy="registerEmail" required><br>
+
+    <label for="registerPassword">Password:</label>
+    <input type="password" id="registerPassword" name="registerPassword" data-cy="registerPassword" required><br>
+
+    <button type="button" onclick="submitRegisterForm()" data-cy="registerButton">Register</button>
+  </form>
+
+  <!-- Login Form -->
+  <h2>Login</h2>
+  <form id="loginForm">
+    <label for="loginEmail">Email:</label>
+    <input type="email" id="loginEmail" name="loginEmail" data-cy="loginEmail" required><br>
+
+    <label for="loginPassword">Password:</label>
+    <input type="password" id="loginPassword" name="loginPassword" data-cy="loginPassword" required><br>
+
+    <button type="button" onclick="submitLoginForm()" data-cy="loginButton">Login</button>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 </html>
